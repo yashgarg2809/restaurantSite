@@ -1,0 +1,33 @@
+html{
+    font-size: 10px;
+}
+
+section {
+    position: relative;
+    top: 25vh;
+    height: 75vh;
+    width: 100vw;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25vh;
+}
+
+.serviceCards{
+    width: 35vw;
+    height: 40vh;
+}
+
+#ContactUsContainer{
+    flex-direction:column;
+    
+}
+
+#ContactUs iframe{
+    width: 40vw;
+    height: 40vh;
+
+}
