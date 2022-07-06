@@ -1,0 +1,132 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+
+/* Header */
+#Header{
+    background-color: #d0d0d0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Header h1{
+    font-size: 3rem;
+}
+#Header h2{
+    font-size: 1.8rem;
+}
+/* Menu Begins */
+#menuDropdown{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 30vw; */
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#menuDropdown ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    
+}
+
+#menuDropdown p{
+    position: relative;
+    left: 9px;
+}
+
+#menuUl{
+    display: var(--isVisible);
+}
+
+
+
+
+#menuDropdown li{
+
+    background-color: white;
+    width: 15vw;
+    height: 30px;
+    border-radius: 15px;
+    margin: 3px;
+
+    
+}
+#menuDropdown a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Inside Items begins */
+.cuisineContainers{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    
+}
+
+.cuisineContainers p{
+    text-align: center;
+}
+
+
+
+
+.items ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.items li{
+    display:flex;
+    font-size: 1.1rem;
+    justify-content: space-around;
+
+    
+}
+
+.items span{
+    display: inline-block;
+    width: 60vw;
+    margin: 3px 0;
+}
+
+.items button{
+    width: 5vw;
+    margin: 3px 0;
+    text-align: center;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+
+
+@media screen and (max-width:855px){
+    #menuDropdown li{
+    width:90vw;
+}
+}
+@media screen and (max-width:855px){
+   
+#Header h1{
+    font-size: 2rem;
+}
+}
+    
