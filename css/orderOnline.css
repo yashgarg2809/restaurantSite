@@ -4,13 +4,21 @@ html,body{
     background-color: whitesmoke;
     font-family: 'Rubik', sans-serif;
     scroll-behavior: smooth;
+    font-weight: bold;
+    scroll-snap-type: y mandatory;
 
 }
 
 
-
-
-
+:root{
+    --visibility:0.8;
+}
+.snapContainers{
+    scroll-snap-align: start;
+}
+section{
+    height: 100vh;
+}
 /* Header */
 #Header{
     background-color: #d0d0d0;
@@ -35,6 +43,9 @@ html,body{
     /* width: 30vw; */
     font-size: 1.2rem;
     text-align: center;
+    background: url(../Images/menu.jpg) no-repeat center center/cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
 }
 
 #menuDropdown ul{
@@ -48,10 +59,13 @@ html,body{
 #menuDropdown p{
     position: relative;
     left: 9px;
+    background-color: white;
+    width: 10vw;
+    border-radius: 15px;
 }
 
 #menuUl{
-    display: var(--isVisible);
+    /* display: var(--isVisible); */
     padding: 0;
 }
 
@@ -99,7 +113,7 @@ html,body{
     display:flex;
     font-size: 1.1rem;
     justify-content: space-around;
-
+    
     
 }
 
@@ -109,6 +123,12 @@ html,body{
     margin: 3px 0;
 }
 
+/* .items span span{
+    display: inline;
+    /* background-color: #c7c7c7;
+    
+} 
+*/
 .items button{
     width: 5vw;
     margin: 3px 0;
@@ -118,7 +138,30 @@ html,body{
     border-radius: 15px;
 }
 
+#northIndian{
+    background: url(../Images/northIndianBg.jpg) no-repeat center center/cover;
+    background-color: rgba(255, 255, 255, var(--visibility));
+    background-blend-mode: overlay;
+}
 
+#southIndian{
+    background: url(../Images/southIndian.jpg) no-repeat center center/cover;
+    background-color: rgba(255, 255, 255, var(--visibility));
+    background-blend-mode: overlay;
+    
+}
+
+#chinese{
+    background: url(../Images/chinese.jpg) no-repeat center center/cover;
+    background-color: rgba(255, 255, 255, var(--visibility));
+    background-blend-mode: overlay;
+}
+
+#italian{
+    background: url(../Images/italian.jpg) no-repeat center center/cover;
+    background-color: rgba(255, 255, 255, var(--visibility));
+    background-blend-mode: overlay;
+}
 
 @media screen and (max-width:855px){
     #menuDropdown li{
@@ -132,3 +175,4 @@ html,body{
 }
 }
     
+
