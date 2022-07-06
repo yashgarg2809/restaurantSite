@@ -167,6 +167,9 @@ section{
     #menuDropdown li{
     width:90vw;
 }
+#menuDropdown p{
+    width: 90vw;
+}
 }
 @media screen and (max-width:855px){
    
