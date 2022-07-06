@@ -52,6 +52,7 @@ html,body{
 
 #menuUl{
     display: var(--isVisible);
+    padding: 0;
 }
 
 
