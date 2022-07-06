@@ -90,6 +90,7 @@ html,body{
 .items ul{
     display: flex;
     flex-direction: column;
+    padding: 0;
     
 }
 
