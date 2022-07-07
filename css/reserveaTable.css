@@ -88,6 +88,10 @@ input{
     #Header h1 {
         font-size: 2rem;
     }
+    #formReserve div{
+        flex-direction: column;
+        
+    }
 }
 
 
