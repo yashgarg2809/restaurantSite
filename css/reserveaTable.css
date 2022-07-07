@@ -1,0 +1,93 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: bold;
+    scroll-snap-type: y mandatory;
+
+}
+
+.snapContainers{
+    scroll-snap-align: start;
+}
+
+/* Header */
+#Header {
+    background-color: #d0d0d0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* height: 25vh; */
+    justify-content: space-evenly;
+}
+
+#Header h1 {
+    font-size: 3rem;
+}
+
+#Header h2 {
+    font-size: 1.8rem;
+}
+
+/* Form */
+#reserveTableForm{
+background: url(../Images/reserveTableMain.jpg) no-repeat center center/cover;
+background-color: rgba(255, 255, 255, 0.41);
+background-blend-mode: overlay;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#formContainer{
+    height: 70vh;
+    background-color: rgba(221, 221, 221, 0.8);
+    width: 50vw;
+    border-radius: 15px;
+
+}
+
+
+#formReserve{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+}
+
+#formReserve div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+}
+
+#submitButton{
+    
+    justify-content: center!important;
+    
+}
+#submitButton input{
+    background-color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width:855px) {
+
+    #Header h1 {
+        font-size: 2rem;
+    }
+}
+
+
