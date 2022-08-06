@@ -221,7 +221,7 @@ button:hover{
 }
 
 
-#orderCompleteButton{
+#orderCompleteButtonFinal{
     border: none;
     border-radius: 15px;
     color: black;
@@ -242,6 +242,12 @@ button:hover{
 #Header h1{
     font-size: 2rem;
 }
+#cartPopup{
+    left: 12vw;
 }
-    
+.cart button{
+    width: 20vw;
+    margin-left: 75vw;
+}
+}
 
