@@ -12,12 +12,13 @@ html,body{
 
 :root{
     --visibility:0.8;
+    --menuInsideHeigth:100vh;
 }
 .snapContainers{
     scroll-snap-align: start;
 }
 section{
-    height: 100vh;
+    height: var(--menuInsideHeigth);
 }
 /* Header */
 #Header{
@@ -136,6 +137,11 @@ section{
     background-color: white;
     border: none;
     border-radius: 15px;
+
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 #northIndian{
@@ -163,6 +169,66 @@ section{
     background-blend-mode: overlay;
 }
 
+.cart{
+    width: 100%;
+    
+    /* background-color: rgba(46,167,46, var(--visibility)); */
+    position: fixed;
+    height: 10vh;
+    left: 0;
+    bottom: 0;
+
+
+}
+
+.cart button{
+
+    background-color: #4e73b7cc;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    display: block;
+    margin-left: 80vw;
+    height: 5vh;
+    width: 10vw;
+    left: 10vw;
+    /* margin-top: 2vh; */
+    transition: all 0.5s;
+    
+}
+
+.cart button{
+    text-decoration: none;
+    color: black;
+}
+
+.cart button:hover{
+    transform: scale(1.2);
+}
+
+
+#cartPopup{
+    height: 40vh;
+    width: 60vw;
+    background-color: rgba(201, 186, 186);
+    
+    border: none;
+    border-radius: 15px;
+    position: fixed;
+    left: 20vw;
+    top: 20vh;
+    padding: 2em;
+}
+
+
+#orderCompleteButton{
+    border: none;
+    border-radius: 15px;
+    color: black;
+    display: block;
+    margin: 0 auto;
+    
+}
 @media screen and (max-width:855px){
     #menuDropdown li{
     width:90vw;
